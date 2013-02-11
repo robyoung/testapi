@@ -4,7 +4,7 @@ import datetime
 from flask import Flask, request
 import pymongo
 
-from .timeutil import parse_iso8601
+from testapi.timeutil import parse_iso8601
 
 db = pymongo.Connection()['testapi']['testapi']
 
