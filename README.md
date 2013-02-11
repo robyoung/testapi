@@ -28,10 +28,10 @@ The naming follows relatively closely to that of Google Analytics.
 
 ## Examples
 
-http://localhost:5000/api/v1?start-at=2013-02-01&period=hour&metrics=visits
-http://localhost:5000/api/v1?start-at=2013-01-01&period=week&metrics=visits
-http://localhost:5000/api/v1?start-at=2013-01-20&end-at=2013-01-28&dimensions=format,slug&metrics=entries,successes
-http://localhost:5000/api/v1?start-at=2013-01-20&dimensions=format&metrics=entries,successes
+* http://localhost:5000/api/v1?start-at=2013-02-01&period=hour&metrics=visits
+* http://localhost:5000/api/v1?start-at=2013-01-01&period=week&metrics=visits
+* http://localhost:5000/api/v1?start-at=2013-01-20&end-at=2013-01-28&dimensions=format,slug&metrics=entries,successes&period
+* http://localhost:5000/api/v1?start-at=2013-01-20&end-at=2013-01-28&dimensions=format&metrics=entries,successes&period=week
 
 ** Notes **
 
@@ -39,5 +39,3 @@ http://localhost:5000/api/v1?start-at=2013-01-20&dimensions=format&metrics=entri
    separately. This is done for format engagement format and slug. This could obviously grow pretty quickly as we add more
    dimensions and periods.
 2. If we know that various series cannot be easily mixed it would be more manageable to have them stored separately.
-
-
