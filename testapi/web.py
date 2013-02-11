@@ -13,6 +13,8 @@ app = Flask(__name__)
 @app.route('/api/v1')
 def v1():
     query = {}
+    if not request.args.get('period'):
+        return "period is a required field", 400
     if request.args.get('period'):
         query['period'] = request.args.get('period')
     # this is wrong, needs to know difference between dates and times
