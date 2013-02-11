@@ -4,7 +4,7 @@
 
 You will need:
 * Python 2.7 or greater
-* virtualenv
+* [virtualenv](http://pypi.python.org/pypi/virtualenv)
 * `client_secrets.json` from [Google API Console](https://code.google.com/apis/console)
 
 Then run `setup.sh` and follow any instructions.
