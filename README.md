@@ -33,7 +33,7 @@ The naming follows relatively closely to that of Google Analytics.
 * http://localhost:5000/api/v1?start-at=2013-01-20&end-at=2013-01-28&dimensions=format,slug&metrics=entries,successes&period
 * http://localhost:5000/api/v1?start-at=2013-01-20&end-at=2013-01-28&dimensions=format&metrics=entries,successes&period=week
 
-** Notes **
+**Notes**
 
 1. Because metrics like visits and visitors cannot be aggregated we need to store all combinations of dimensions and period
    separately. This is done for format engagement format and slug. This could obviously grow pretty quickly as we add more
